@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table and Form</title>
+</head>
+<body>
+    
+    <h1>HTML Table and Form</h1>
+    <p>
+        <em>Creating data table and using form with different types of inputs.</em>
+
+        <hr>
+
+        <table border="1"> 
+            <thead>
+                <tr> 
+                    <th colspan="2">Code</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>Headings 1-6</td>
+                    <td>Creates a strong text with large to small font size</td>
+                    <td><h1>This is a Heading 1</h1></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Paragraph</td>
+                    <td>Creates a simple text</td>
+                    <td><p>This is a paragraph</p></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Horizontal Rule</td>
+                    <td>Adds Horizontal Line with Margin on top and bottom</td>
+                    <td><hr></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Break</td>
+                    <td>Breaks the line within a text</td>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Strong Font</td>
+                    <td>Adds importance to the text</td>
+                    <td><strong>This is a strong text</strong></td>
+                </tr>
+
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Emphasis</td>
+                    <td>Emphasizing text</td>
+                    <td><em>This is a Emphasized Text</em></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td align="center" colspan="4"><em>Basic HTML Codes</em></td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <hr>
+
+        <h2>Registration Form</h2>
+        <p>Please input correct details</p>
+
+        <br>
+
+        <form action="https://google.com">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" required> <br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" required> <br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required> <br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required> <br>
+
+            <label for="number">Contact Number</label><br>
+            <input type="number" id="number" name="number" required> <br>
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" name="dob" required> <br>
+
+            <label for="gender">Select a gender</label> <br>
+            <select name="gender" id="gender" required>
+                <option value="">--- Select ---</option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="s">I prefer not to say</option>
+                <option value="o">Others</option>
+            </select> <br>
+
+            <label for="">Technologies I Use</label><br>
+            <input type="checkbox"><label for="">Git</label><br>
+            <input type="checkbox"><label for="">HTML</label><br>
+            <input type="checkbox"><label for="">JS</label><br>
+            <input type="checkbox"><label for="">CSS</label><br>
+            <input type="checkbox"><label for="">Bootstrap</label><br>
+            <input type="checkbox"><label for="">Express</label><br>
+            <input type="checkbox"><label for="">React</label><br>
+            <input type="checkbox"><label for="">Others</label><br>
+
+            <label for="notes">Notes</label><br>
+            <textarea name="notes" id="notes" rows="5"></textarea>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </p>
+
+</body>
+</html>
